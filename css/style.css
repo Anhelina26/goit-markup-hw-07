@@ -320,11 +320,22 @@ a{
     gap: var(--indent);
 }
 
+
+/*****************Team********************/
 .team {
     background-color: var(--other-backround-color);
 }
 
-.team .team-name {
+.team__title{
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+.team__name{
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -332,7 +343,7 @@ a{
     letter-spacing: 0.03em;
     text-align: center;
  }
- .team .team-paragraf {
+.team__paragraf {
      font-size: 16px;
      margin-bottom:16px;
     line-height: 1.9;
@@ -341,7 +352,7 @@ a{
     color: var(--paragraf-color)
  }
  
-.team-wrapper {
+.team__wrapper {
     padding: 30px 0;
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
@@ -350,6 +361,7 @@ a{
      0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+/*********************Socials*****************************/
 .socials{
   display: flex;
   justify-content: center;
@@ -375,6 +387,25 @@ a{
     background-color: var(--primary-accent-color);
     fill: var(--white-color);
 }
+/*************Card-set*********************/
+.card-set__item {
+     transition-property: box-shadow;
+     transition-duration: 250ms;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-set__item:hover,
+.card-set__item:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+     0px 4px 4px rgba(0, 0, 0, 0.06), 
+     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.card-set__item{
+    flex-basis: var(--card-set-item);
+}
+.card-set__item:hover .overlay{
+    transform: translateY(0);
+}
+
 /***************Logo****************/
 .logo-title{
     text-align: center;
@@ -511,9 +542,6 @@ a{
     min-width: 231px;
 }
 
-.card-set-item{
-    flex-basis: var(--card-set-item);
-}
 
 .button-portfolio {
     font-family: 'Roboto';
@@ -551,9 +579,6 @@ a{
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--paragraf-color);
-}
-.card-set-item:hover .overlay{
-    transform: translateY(0);
 }
 .galery-thumb{
     position:relative;
@@ -612,17 +637,6 @@ color: var(--white-color);
     border-top: none;
 }
 
-.card-set-item {
-     transition-property: box-shadow;
-     transition-duration: 250ms;
-     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.card-set-item:hover,
-.card-set-item:focus{
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-     0px 4px 4px rgba(0, 0, 0, 0.06), 
-     1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 /************Modal Window************/
 .backdrop{
     position:fixed;
