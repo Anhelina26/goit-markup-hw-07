@@ -408,19 +408,18 @@ a{
 }
 
 /***************Logo****************/
-.logo-title{
+.logo__title{
     text-align: center;
     margin-bottom:50px;
     font-weight: 700;
     font-size: 36px;
 }
-.logo-icon{
+.logo__icon{
     display: flex;
     gap:30px;
-    
 }
 
-.icons-link{
+.logo__link{
     display:flex;
     width: 170px;
      border-radius: 4px;
@@ -431,11 +430,11 @@ a{
     outline: 1px solid var(--socials-svg-color);
     transition-property: border, fill;
     transition-duration: 250ms;
-     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.icons-link:hover,
-.icons-link:focus{
+.logo__link:hover,
+.logo__link:focus{
     border: 1px solid #2196F3;
     fill: var(--primary-accent-color);
 }
