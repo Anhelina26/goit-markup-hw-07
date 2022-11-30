@@ -285,7 +285,10 @@ a{
 }
 
 /********Technology section********/
-.tech-overlay{
+.technology{
+    position: relative;
+}
+.technology__overlay{
     position: absolute;
     bottom:0;
     padding-top: 20px;
@@ -293,9 +296,6 @@ a{
     background-color: var(--overlov-tech-bg-color);
     width:100%;
     text-transform: uppercase;
-}
-.technology{
-    position: relative;
 }
 .tech-overlay-text{
     font-weight: 700;
@@ -305,10 +305,7 @@ a{
     text-align: center;
 }
 
-
-
-
-.section-title {
+.technology__title {
     margin-bottom: 50px;
    font-size: 36px;
     line-height: 1.16;
@@ -317,7 +314,7 @@ a{
     color: var(--title-text-color);
 }
 
-.technology-style {
+.technology__style {
     display: flex;
     align-items: center;
     gap: var(--indent);
