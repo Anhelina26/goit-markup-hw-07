@@ -5,26 +5,28 @@
 //base style
 @import './base/base';
 @import './base/_reset';
-@import './base/card-set';
-@import './base/modal-window';
-@import './base/modal-form';
 
 
 //Components
-@import  './component/container';
-@import  './component/section';
-@import './component/header';
+@import './component/container';
+@import './component/section';
 @import './component/site-nav';
-@import './component/features';
-@import './component/hero';
 @import './component/button';
-@import './component/technology';
-@import './component/team';
 @import './component/socials';
-@import './component/logos';
-@import './component/footer';
-@import './component/footer-socals';
-@import './component/footer-form';
+@import './component/modal-form';
+@import './component/card-set';
+@import './component/modal-window';
 
-@import './component/portfolio';
 
+//Layout
+@import './layout/header';
+@import './layout/hero';
+@import './layout/features';
+@import './layout/technology';
+@import './layout/team';
+@import './layout/logos';
+@import './layout/footer';
+
+
+//Pages
+@import './pages/portfolio';
